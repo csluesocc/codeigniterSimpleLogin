@@ -1,0 +1,46 @@
+body{
+  background:#fff;
+}
+.navbar{
+  font-size:18px;
+}
+.navbar-brand{
+  font-size:22px;
+}
+ul.nav i{
+  font-size: 22px;
+  font-weight:bolder;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding:1em;
+  background-color:#424242;
+  color:#fff;
+  font-size:16px;
+  line-height:26px;
+}
+footer .copy{
+   color:#fff;
+}
+footer ul.icon-list{
+  list-style:none;
+  font-size:26px;
+}
+
+footer ul.icon-list li{
+  float:right;
+  padding-left:0.5em;
+}
+
+footer ul.icon-list li a{
+  font-style:none;
+  color:#bdbdbd;
+}
+
+footer ul.icon-list li a:hover{
+  color:#fff;
+  font-style:italic;
+}

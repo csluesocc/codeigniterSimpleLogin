@@ -1,0 +1,10 @@
+body{
+  background-color:#1976d2;
+}
+div.login-form{
+  background-color:#fff;
+  /*border:1px solid #e0e0e0;*/
+  padding:2.5em;
+  max-width:60%;
+  margin-top:10%;
+}
