@@ -1,0 +1,7 @@
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+
+RewriteEngine on
+RewriteCond $1 !^(index\.php|(.*)\.swf|forums|images|css|downloads|jquery|js|robots\.txt|favicon\.ico)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php?/$1 [L,QSA]
