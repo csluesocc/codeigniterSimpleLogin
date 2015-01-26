@@ -24,7 +24,7 @@ DROP TABLE IF EXISTS `users`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `users` (
   `email` varchar(35) NOT NULL,
-  `password` varchar(256) NOT NULL,
+  `password` varchar(32) NOT NULL,
   `name` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
