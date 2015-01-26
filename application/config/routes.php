@@ -40,6 +40,8 @@
 
 $route['default_controller'] = "main";
 $route['admin'] = "main/admin";
+/* user */
+$route['signup'] = "user/signup";
 $route['404_override'] = '';
 
 

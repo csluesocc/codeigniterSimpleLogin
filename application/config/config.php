@@ -283,7 +283,11 @@ $config['cookie_secure']	= FALSE;
 | COOKIE data is encountered
 |
 */
-$config['global_xss_filtering'] = FALSE;
+
+/*
+  to prevent cross-site scripting attacks
+*/
+$config['global_xss_filtering'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------

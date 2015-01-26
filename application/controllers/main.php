@@ -6,15 +6,15 @@ class Main extends CI_Controller {
   }
 
   /**
-    Serving index view    
-  */
+   *Serving index view
+   */
   public function index() {
     $this->load->view('home');
   }
 
   /**
-    Serving admin view
-  */
+   *Serving admin view
+   */
   public function admin() {
     $this->load->view('admin');
   }

@@ -93,6 +93,7 @@
                     type="text"
                     class="form-control"
                     id="name"
+                    name="name"
                     placeholder="your name"
                     ng-required="true"
                     ng-model="new.name"
@@ -104,9 +105,10 @@
                     type="email"
                     class="form-control"
                     id="email"
+                    name="email"
                     placeholder="example@cshluesocc.org"
                     ng-required="true"
-                    mg-model="new.email"
+                    ng-model="new.email"
                     ng-trim="true"/>
                 </div>
                 <div class="form-group">
@@ -115,6 +117,7 @@
                     type="password"
                     class="form-control"
                     id="password"
+                    name="password"
                     placeholder="Password"
                     ng-required="true"
                     ng-model="new.password"
