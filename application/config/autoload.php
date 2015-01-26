@@ -52,6 +52,11 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
+
+/*
+  we're building a simple login system so, we need to load database and session libraries
+*/
+
 $autoload['libraries'] = array('database', 'session');
 
 
@@ -62,6 +67,11 @@ $autoload['libraries'] = array('database', 'session');
 | Prototype:
 |
 |	$autoload['helper'] = array('url', 'file');
+*/
+
+/*
+  we're gonna use the global function 'base_url()' that returns the site base URL,
+  for that we need to load the 'url' helper
 */
 
 $autoload['helper'] = array('url');

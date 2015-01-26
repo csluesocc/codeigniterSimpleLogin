@@ -224,6 +224,10 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
+
+/*
+  see: https://ellislab.com/codeigniter/user-guide/libraries/encryption.html
+*/
 $config['encryption_key'] = '2b8d2907ad8f7c467350bc39095fe555';
 
 /*

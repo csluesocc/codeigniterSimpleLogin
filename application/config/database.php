@@ -47,12 +47,22 @@
 
 $active_group = 'default';
 $active_record = TRUE;
+/*
+	We need to specify our database settings.
+	In my case i'm using MariaDB which uses the same setting as MySQL.
+	for a simple configuration, you need to provide your hostname, username,
+	password of your database server configuration, also you need to provide the
+	database name and the database driver you would like to use.
 
+	See here for more info: http://php.net/manual/en/book.mysqli.php
+
+	Note: i'm using the mysqli driver, see php docs for more info: http://php.net/manual/en/book.mysqli.php
+*/
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
 $db['default']['password'] = 'adminadmin';
 $db['default']['database'] = 'simplelogin';
-$db['default']['dbdriver'] = 'mysql';
+$db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;

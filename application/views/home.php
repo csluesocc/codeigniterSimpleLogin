@@ -4,12 +4,20 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <title>CI simple login | CSHL</title>
+    <?php
+      /*
+        To load views as block templates whe just need to use:
+        $this->load->view('your_view')
+        Since "$this" is the singleton Codeigniter instance and
+        can be used in controllers, models and views also.
+      */
+    ?>
     <!-- styles -->
     <?=$this->load->view('templates/styles.html')?>
     <!-- end styles -->
     <link rel="stylesheet" href="<?=base_url()?>static/css/login.css"/>
   </head>
-  <body ng-controller="signupCtrl">
+  <body>
     <div class="container login-form  shadow-z-5">
       <div class="row">
         <div class="col-md-12">
@@ -64,7 +72,7 @@
       </div>
     </div>
 
-    <div class="modal" id="signup">
+    <div class="modal" id="signup" ng-controller="signupCtrl">
       <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
@@ -121,7 +129,7 @@
                 type="button"
                 class="btn btn-primary"
                 id="btnSignUp"
-                ng-click="submit()"
+                ng-click="newUser()"
                 ng-disabled="frm.$invalid">Submit</button>
             </div>
           </div>

@@ -5,10 +5,16 @@ class Main extends CI_Controller {
     parent::__construct();
   }
 
+  /**
+    Serving index view    
+  */
   public function index() {
     $this->load->view('home');
   }
 
+  /**
+    Serving admin view
+  */
   public function admin() {
     $this->load->view('admin');
   }
