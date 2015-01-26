@@ -10,7 +10,7 @@
     <div class="navbar-collapse collapse navbar-inverse-collapse">
         <ul class="nav navbar-nav navbar-right">
             <li><a href="<?=base_url()?>"><i class="icon ion-home"></i></a></li>
-            <li><a href="#"><i class="icon ion-log-out"></i></a></li>            
+            <li><a href="logout"><i class="icon ion-log-out"></i></a></li>            
         </ul>
     </div>
 </div>
