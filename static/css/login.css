@@ -3,8 +3,22 @@ body{
 }
 div.login-form{
   background-color:#fff;
-  /*border:1px solid #e0e0e0;*/
   padding:2.5em;
   max-width:60%;
   margin-top:10%;
+}
+span.err, span.warn{
+  display:block;
+  text-align:center;
+  width:75%;
+  margin:0 auto;
+  padding:0.25em;
+}
+span.err{
+  background-color:#e53935;
+  color:#fff;
+}
+span.warn{
+  background-color:#ef6c00;
+  color:#fff;
 }

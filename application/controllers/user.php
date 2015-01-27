@@ -44,21 +44,27 @@ class User extends CI_Controller{
 	 */
 	public function signin() {
 		if($_POST) {
-			$this->load->model('users'); //loading user model
-			$user = $this->users->getUser($_POST['email'], $_POST['password']);
-			if($user){
-				$sessionData = array(
-				'name' => $user['name'],
-				'email' => $user['email']
-				);
-				$this->session->set_userdata($sessionData);
-				redirect('admin');
+			if(trim($_POST['email']) != "" && trim($_POST['password']) != ""){
+				$this->load->model('users'); //loading user model
+				$user = $this->users->getUser($_POST['email'], $_POST['password']);
+				if($user){
+					$sessionData = array(
+					'name' => $user['name'],
+					'email' => $user['email']
+					);
+					$this->session->set_userdata($sessionData);
+					redirect('admin');
+				}else{
+					$data['err'] = 1;
+					$data['msj'] = "Invalid user or password!";
+					$data['email'] = trim($_POST['email']);
+				}
 			}else{
-				$data['err'] = TRUE;
-				$data['msj'] = "Invalid user or password!";
+				$data['err'] = 2;
+				$data['msj'] = "Please, provide your email and password!";
 			}
 		}else{
-			$data['err'] = TRUE;
+			$data['err'] = 2;
 			$data['msj'] = "Please, provide your email and password!";
 		}
 		$this->load->view('home', $data);

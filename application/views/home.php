@@ -35,7 +35,7 @@
                   type="email"
                   class="form-control"
                   id="email"
-                  name="email"
+                  name="email"                  
                   ng-model="user.email"
                   placeholder="example@cshluesocc.org"
                   ng-required="true"
@@ -68,6 +68,16 @@
               </div>
             </div>
           </form>
+        </div>
+
+        <div class="col-md-12">
+          <span class="<?=(isset($err)) ? (($err == 1) ? "err" : "warn") : "" ?>">
+            <?php
+              if(isset($err)){
+                echo $msj;
+              }
+            ?>
+          </span>
         </div>
       </div>
     </div>
@@ -142,6 +152,7 @@
     <!-- scripts -->
     <?=$this->load->view('templates/scripts')?>
     <!-- end scripts -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"/></script>
     <script src="<?=base_url()?>static/js/loginApp.js"/></script>
   </body>
