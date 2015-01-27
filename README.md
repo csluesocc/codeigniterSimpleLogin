@@ -116,7 +116,7 @@ Ejemplos:
 ```html
 ...
 <!-- cargando styles -->
-<link rel="stylesheet" href="<?base_url()?>static/css/ionicons.css" />
+<link rel="stylesheet" href="<?=base_url()?>static/css/ionicons.css" />
 
 <!-- cargando scripts -->
 <script src="<?=base_url()?>static/js/init.js"></script>
@@ -126,10 +126,14 @@ Ejemplos:
 ##Como usar el código de este repositorio
 Este repositorio contiene el código fuente funcional para registrar y loguear un usuario, una vez configurado y funcionando codeigniter, necesitamos crear la base de datos:
 
+```shell
+$ mysql -u username -h localhost -p
+```
+
 ```sql
 > CREATE DATABASE simplelogin;
 > USE simplelogin;
-> CREATE TABLE users (email varchar(35) NOT NULL, password varchar(32) NOT NULL, name varchar(50) DEFAULT NULL, PRIMARY KEY (email))
+> CREATE TABLE users (email varchar(35) NOT NULL, password varchar(32) NOT NULL, name varchar(50) DEFAULT NULL, PRIMARY KEY (email));
 ```
 
 Crear una copia local del repositorio:
