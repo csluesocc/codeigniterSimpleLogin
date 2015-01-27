@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <title>CI simple login | CSHL</title>
     <!-- styles -->
-    <?=$this->load->view('templates/styles.html')?>
+    <?=$this->load->view('templates/styles')?>
     <!-- end styles -->
     <link rel="stylesheet" href="<?=base_url()?>static/css/custom.css"/>
   </head>
@@ -21,7 +21,7 @@
     <?=$this->load->view('templates/footer.html');?>
 
     <!-- scripts -->
-    <?=$this->load->view('templates/scrips.html')?>
+    <?=$this->load->view('templates/scripts')?>
     <!-- end scripts -->
   </body>
-<html>
+</html>

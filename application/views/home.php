@@ -13,7 +13,7 @@
       */
     ?>
     <!-- styles -->
-    <?=$this->load->view('templates/styles.html')?>
+    <?=$this->load->view('templates/styles')?>
     <!-- end styles -->
     <link rel="stylesheet" href="<?=base_url()?>static/css/login.css"/>
   </head>
@@ -21,7 +21,7 @@
     <div class="container login-form  shadow-z-5">
       <div class="row">
         <div class="col-md-12">
-          <form name="frmlogin" class="form-horizontal" action="admin">
+          <form name="frmlogin" class="form-horizontal" action="signin" method="POST">
             <!--
               validating form using angular.js
               the submit button is disabled when form is invalid
@@ -140,9 +140,9 @@
     </div>
 
     <!-- scripts -->
-    <?=$this->load->view('templates/scrips.html')?>
+    <?=$this->load->view('templates/scripts')?>
     <!-- end scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"/></script>
     <script src="<?=base_url()?>static/js/loginApp.js"/></script>
   </body>
-<html>
+</html>
