@@ -39,12 +39,37 @@ class User extends CI_Controller{
 		}
   }
 
+	/**
+	 * Check if is an valid user, create session and display admin view
+	 */
 	public function signin() {
-		//
+		if($_POST) {
+			$this->load->model('users'); //loading user model
+			$user = $this->users->getUser($_POST['email'], $_POST['password']);
+			if($user){
+				$sessionData = array(
+				'name' => $user['name'],
+				'email' => $user['email']
+				);
+				$this->session->set_userdata($sessionData);
+				redirect('admin');
+			}else{
+				$data['err'] = TRUE;
+				$data['msj'] = "Invalid user or password!";
+			}
+		}else{
+			$data['err'] = TRUE;
+			$data['msj'] = "Please, provide your email and password!";
+		}
+		$this->load->view('home', $data);
 	}
 
-  public function logout() {
-		//
+  /**
+	 * Close current session
+	 */
+	public function logout() {
+		$this->session->sess_destroy();
+		redirect(base_url());
 	}
 }
 ?>

@@ -16,8 +16,30 @@ class Users extends CI_Model {
     return ($this->db->affected_rows()>0) ? true : false;
   }
 
+  /**
+   * Get user data if email and password match
+   * @param string $email user email
+   * @param string $password user password
+   * @return boolean|array false if email and password were invalid, array if all is ok
+   */
   public function getUser($email, $password) {
-    //
+    $where = array(
+      'email' => $email
+    );
+    $this->db->select();
+    $this->db->from('users');
+    $this->db->where($where);
+    $query = $this->db->get();
+
+    if($query->num_rows() > 0){
+      $this->load->library('encrypt');
+      $this->encrypt->set_cipher(MCRYPT_BLOWFISH);
+      $user = $query->row_array();
+      if($password == $this->encrypt->decode($user['password'])){
+        return $user;
+      }
+    }
+    return false;
   }
 
   /**

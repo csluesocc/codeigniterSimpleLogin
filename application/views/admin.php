@@ -1,3 +1,10 @@
+<?php
+if(!$this->session->userdata('email')){
+  $this->session->sess_destroy();
+  redirect(base_url());
+}
+$username = $this->session->userdata('name');
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -14,7 +21,7 @@
 
     <div class="container">
       <div class="page-header">
-        <h1>Wellcome back user</h1>
+        <h1>Wellcome back <?=$username?></h1>
       </div>
     </div>
 
