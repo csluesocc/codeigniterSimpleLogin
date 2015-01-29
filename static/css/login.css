@@ -7,6 +7,15 @@ div.login-form{
   max-width:60%;
   margin-top:10%;
 }
+.title{
+  text-align:center;
+  margin-top:2.5em;
+}
+.title h1, .title h3, .title h4{
+  font-weight:bolder;
+  color:#FFF;
+  text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.91);
+}
 span.err, span.warn{
   display:block;
   text-align:center;

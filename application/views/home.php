@@ -18,6 +18,12 @@
     <link rel="stylesheet" href="<?=base_url()?>static/css/login.css"/>
   </head>
   <body>
+    <div class="title center-block">
+      <h1 class="visible-lg visible-md">CSHL - CODEIGNITER SIMPLE LOGIN</h1>
+      <h3 class="visible-sm">CSHL - CODEIGNITER SIMPLE LOGIN</h3>
+      <h4 class="visible-xs">CSHL - CODEIGNITER SIMPLE LOGIN</h4>
+    </div>
+    
     <div class="container login-form  shadow-z-5">
       <div class="row">
         <div class="col-md-12">
@@ -35,7 +41,7 @@
                   type="email"
                   class="form-control"
                   id="email"
-                  name="email"                  
+                  name="email"
                   ng-model="user.email"
                   placeholder="example@cshluesocc.org"
                   ng-required="true"
