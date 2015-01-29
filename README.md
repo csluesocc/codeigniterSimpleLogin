@@ -5,7 +5,7 @@
 
 Código fuente de ejemplo para registro y logueo de usuarios con codeigniter framework.
 
-Ver [demo](http://cshluesocc.org/~carloscarcamo/simplelogin/)
+Ver [demo](http://www.cshluesocc.org/~carloscarcamo/simplelogin/)
 
 ##Prerrequisitos:
 
