@@ -159,7 +159,7 @@
     <?=$this->load->view('templates/scripts')?>
     <!-- end scripts -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"/></script>
-    <script src="<?=base_url()?>static/js/loginApp.js"/></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+    <script src="<?=base_url()?>static/js/loginApp.js"></script>
   </body>
 </html>
