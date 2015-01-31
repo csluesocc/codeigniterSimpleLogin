@@ -23,7 +23,7 @@
       <h3 class="visible-sm">CSHL - CODEIGNITER SIMPLE LOGIN</h3>
       <h4 class="visible-xs">CSHL - CODEIGNITER SIMPLE LOGIN</h4>
     </div>
-    
+
     <div class="container login-form  shadow-z-5">
       <div class="row">
         <div class="col-md-12">
@@ -154,6 +154,9 @@
           </div>
       </div>
     </div>
+    <!-- GitHub Ribbons -->
+    <a href="https://github.com/csluesocc/codeigniterSimpleLogin"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+    <!-- end GitHub Ribbons -->
 
     <!-- scripts -->
     <?=$this->load->view('templates/scripts')?>
